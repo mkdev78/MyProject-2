@@ -4,6 +4,10 @@ typedef struct My_Struct
 {
     int x;
     int y;
+    UINT8 operator == (const My_Struct& s)
+    {
+        return (this.x == s.x && this.y == s.y);
+    }
 } My_Struct_t;
 
 int main()
